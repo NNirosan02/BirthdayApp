@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">BirthdayApp</string>
+    <string name="main_fragment">Main Fragment</string>
+    <string name="txt_something_went_wrong">Sorry, something went wrong. Please try again.</string>
+    <string name="txt_error">Error</string>
+    <string name="txt_close">Close</string>
+    <string name="txt_retry">Retry</string>
+</resources>

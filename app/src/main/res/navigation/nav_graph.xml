@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph.xml"
+    app:startDestination="@id/ContactsFragment">
+    <fragment
+        android:id="@+id/ContactsFragment"
+        android:name="com.nnapps.birthdayapp.ui.main.ContactsFragment"
+        android:label="@string/main_fragment"
+        tools:layout="@layout/fragment_contacts">
+        <action
+            android:id="@+id/action_contactsFragment_to_contactDetailFragment"
+            app:destination="@id/ContactDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/ContactDetailFragment"
+        android:name="com.nnapps.birthdayapp.ui.userdetail.ContactDetailFragment"
+        android:label="@string/main_fragment"
+        tools:layout="@layout/fragment_contact_detail">
+        <argument
+            android:name="contact"
+            app:argType="com.nnapps.birthdayapp.domain.model.Contact" />
+    </fragment>
+</navigation>
